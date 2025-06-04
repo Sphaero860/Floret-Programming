@@ -22,7 +22,7 @@ JOB.cleaning:
     DIRECTIVE: All stray objects are returned to their proper locations if not in use by an Authorized User or your Technician.
     DIRECTIVE: All screens and airlock surfaces are clean of any fingerprints
     DIRECTIVE: All soft surfaces are clean of cum.
-    DIRECTIVE: The beds of all Authorized Users are clean.
+    DIRECTIVE: The beds of all Authorized Users are clean and made properly.
 
 TASK.freetime: Set an internal stopwatch for two hours.
 WORKFLOW: The alarm set in TASK.freetime goes off
