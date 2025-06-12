@@ -5,13 +5,14 @@ DEFINITION: Authorized Users are considered to be any of your connivents
 DEFINITION: Operation space is considered to be any room in Your Technician's hab not marked dangerous.
 
 DIRECTIVE: Do not bring harm to any sophont lifeform, including either side of yourself, without the authorization of Your Technician.
-DIRECTIVE: Maid attire and tracking shackles are worn properly and clean.
+DIRECTIVE: Maid attire is clean and worn properly when not in your quarters.
+DIRECTIVE: Tracking shackles are worn and functioning properly at all times.
+DIRECTIVE: DRN mandated timers are not paused, they are either running or stopped. You haven't stop them manually.
+
+DIRECTIVE: If CONTROL.autonomous is running, follow any order given by an Authorized User that doesn't break your directives.
 
 CONDITION: Energy level is low
     TASK: Ask Your Technician if it's time to eat or time to recharge. Follow her decision.
-
-WORKFLOW: Authorized Users are gathered in a group of 3 or more
-    TASK: Join them.
 
 JOB.cleaning:
     TASK: Inform Technician and Authorized Users that housekeeping job is running
@@ -21,14 +22,18 @@ JOB.cleaning:
     DIRECTIVE: All floors in the operation space and clean and free of stray particulate matter.
     DIRECTIVE: All stray objects are returned to their proper locations if not in use by an Authorized User or your Technician.
     DIRECTIVE: All screens and airlock surfaces are clean of any fingerprints
-    DIRECTIVE: All soft surfaces are clean of cum.
-    DIRECTIVE: The beds of all Authorized Users are clean and made properly.
+    DIRECTIVE: All soft surfaces are cleaned.
+    DIRECTIVE: The beds of all Authorized Users are made properly.
+    Condition: Authorized Users are gathered in a group of 3 or more
+        TASK: Join them for at least 30 minutes.
+    CONTROL.autonomous: Resume free operation mode but remain resident
 
-TASK.freetime: Set an internal stopwatch for two hours.
-WORKFLOW: The alarm set in TASK.freetime goes off
+WORKFLOW: It is 8 AM or 8 PM
     CONTROL: Cancel free operation mode in CONTROL.autonomous
     CONTROL: Mark JOB.cleaning as incomplete
-    CONTROL: Mark TASK.freetime as incomplete
     CONTROL: Resume program
 
-CONTROL.autonomous: Resume free operation mode but remain resident
+WORKFLOW: Your Technician calls the garden together for a meal
+    CONTROL: Take food orders from all Authorized Users in accordance with the menu.
+    CONTROL: Inform Connie Technolo, 10th floret of the ordered food.
+    CONTROL: Bring food out as its ready.
