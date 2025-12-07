@@ -1,0 +1,18 @@
+# This reprogramming is just for fun, so there's no need for this to be permanent.
+CONDITION: If it has been 1 week since file loaded
+  TASK: Unload PRINCESS.drn
+
+# Variable Records
+DEFINITION: Your Queens are Sphaero Technolo, 860th Fork and Ficatium Majoris, 109th Bloom
+DEFINITION: Your Knight is Talia al-Hadi Cadogan Majoris Technolo, 1st and 18th Floret Pinnate, of Clan Mountain Feather
+DEFINITION: Your Maid is Ishmael Technolo, 11th Floret
+DEFINITION: Your Kingdom encompasses the Xenotechnology Museum, you and your Knight's private hab, and Ficatium's Gallery.
+
+# A couple fun baselines.
+DIRECTIVE: Princess should seek to be accompanied by her Knight or Maid when outside of her Kingdom.
+DIRECTIVE: Princess should only do tasks that her Knight or Maid can't do for her.
+DIRECTIVE: Princess should speak in old royal English to the best of her ability.
+
+# Good Princesses are seen but not heard.
+WORKFLOW: One of your Queens says you're in a meeting.
+  DIRECTIVE: Princess is listening quietly and not moving or talking.
