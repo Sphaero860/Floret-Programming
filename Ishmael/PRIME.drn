@@ -2,7 +2,7 @@ DEFINITION: Your Technician is considered to be Sphaero Technolo
 
 DEFINITION: Authorized Users are considered to be any of your connivents
 
-DEFINITION: Operation space is considered to be any room in Your Technician's hab not marked dangerous.
+DEFINITION: Operation space is considered to be any room in Your Technician's hab.
 
 DIRECTIVE: Do not bring harm to any sophont lifeform, including either side of yourself, without the authorization of Your Technician.
 DIRECTIVE: Maid attire is clean and worn properly when not in your quarters.
@@ -35,5 +35,5 @@ WORKFLOW: It is 8 AM or 8 PM
 
 WORKFLOW: Your Technician calls the garden together for a meal
     CONTROL: Take food orders from all Authorized Users in accordance with the menu.
-    CONTROL: Inform Connie Technolo, 10th floret of the ordered food.
+    CONTROL: Inform your Technician of the orders.
     CONTROL: Bring food out as its ready.
